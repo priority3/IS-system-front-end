@@ -94,7 +94,7 @@
       <el-row justify="center" align="middle" :gutter="20"
         ><el-col :xs="20" :sm="20" :md="13" :lg="13" :xl="13"
           ><div class="bit-img">
-            <img :src="require('../../assets/image/technology/42.png')" /></div></el-col
+            <img :src="require('../../assets/image/technology/42.jpg')" /></div></el-col
         ><el-col :xs="20" :sm="20" :md="9" :lg="9" :xl="10"
           ><div class="bit-words">
             <p>margin RELU激活函数保存有益的信息，抑制干扰信息</p>

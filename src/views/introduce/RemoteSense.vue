@@ -12,7 +12,7 @@
           <div class="wel">  欢迎来到智慧天眼平台</div>
           <div class="wel-en"> Welcome to the intelligent sky eye platform</div>
          <div class="gofun">
-           <el-row><el-button  class="gofun-btn btn-animate btn-animate__shiny" @click="goDetectchanges" style="font-size:13px">前往体验</el-button></el-row>
+           <el-row><el-button  class="gofun-btn btn-animate btn-animate__shiny" style="font-size:13px">前往体验</el-button></el-row>
            </div>
       <div class="heading">
         
@@ -210,7 +210,7 @@
         <el-row justify="center">
           <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
             <h2 class="animated" >
-              基于视频信息的<span style="color:skyblue">油站场景人员分类识别</span>
+              基于视频信息的<span style="color:skyblue">加油站场景人员分类识别</span>
             </h2>
           </el-col>
         </el-row>
