@@ -210,15 +210,14 @@
         <el-row justify="center">
           <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
             <h2 class="animated" >
-              基于<span style="color:skyblue">视频信息</span>
+              基于基于视频信息的<span style="color:skyblue">油站场景人员分类识别</span>
             </h2>
           </el-col>
         </el-row>
         <el-row justify="center">
           <el-col :xs="20" :sm="20" :md="20" :lg="20" :xl="20">
             <h4 class="nor-wowrds" style="color:#000">
-             加油站场景人员分类识别算法模型
-同时收集多个相机视角信息，<span class="color-cha">对加油站相关工作人员进行跟踪分析</span>，识别定位到具体的工作人员，输出其当天的路程以及在监控视角下的存在时间，加油站可根据管理软件的<span class="color-cha">统计信息和员工作业记录表现</span>，以友好的界面展示绩效考核情况，以实现加油人员透明管理考核，效果斐然
+             算法模型同时收集多个相机视角信息，<span class="color-cha">对加油站相关工作人员进行跟踪分析</span>，识别定位到具体的工作人员，输出其当天的路程以及在监控视角下的存在时间，加油站可根据管理软件的<span class="color-cha">统计信息和员工作业记录表现</span>，以友好的界面展示绩效考核情况，以实现加油人员透明管理考核，效果斐然
             </h4>
           </el-col>
         </el-row>
