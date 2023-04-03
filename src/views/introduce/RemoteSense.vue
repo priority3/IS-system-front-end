@@ -210,7 +210,7 @@
         <el-row justify="center">
           <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
             <h2 class="animated" >
-              基于基于视频信息的<span style="color:skyblue">油站场景人员分类识别</span>
+              基于视频信息的<span style="color:skyblue">油站场景人员分类识别</span>
             </h2>
           </el-col>
         </el-row>
