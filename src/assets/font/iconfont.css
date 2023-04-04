@@ -5,10 +5,10 @@
        url('iconfont.ttf?t=1657080218648') format('truetype');
 }
 @font-face {
-  font-family: "iconfont"; /* Project id 2969535 */
-  src: url('//at.alicdn.com/t/c/font_2969535_01f2nh6xkdpa.woff2?t=1680103574359') format('woff2'),
-       url('//at.alicdn.com/t/c/font_2969535_01f2nh6xkdpa.woff?t=1680103574359') format('woff'),
-       url('//at.alicdn.com/t/c/font_2969535_01f2nh6xkdpa.ttf?t=1680103574359') format('truetype');
+  font-family: 'iconfont';  /* Project id 2969535 */
+  src: url('//at.alicdn.com/t/c/font_2969535_va8okdayg1d.woff2?t=1680578681986') format('woff2'),
+       url('//at.alicdn.com/t/c/font_2969535_va8okdayg1d.woff?t=1680578681986') format('woff'),
+       url('//at.alicdn.com/t/c/font_2969535_va8okdayg1d.ttf?t=1680578681986') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -246,11 +246,10 @@
   content: "\e600";
 }
 
-.icon-caidan:before {
-  content: "\e60f";
+.icon-arrow-right:before {
+  content: "\e642";
 }
 
 .icon-sae:before {
   content: "\e914";
 }
-

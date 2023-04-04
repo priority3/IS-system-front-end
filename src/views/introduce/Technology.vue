@@ -17,7 +17,7 @@
     <div class="bit">
       <el-row justify="center"
         ><el-col :span="6" class="deeplearning-title"
-          >变化检测使用模型：Yolov5s</el-col
+          >目标检测模型：Yolov5s</el-col
         ></el-row
       >
       <el-row justify="center" align="middle" :gutter="20"
@@ -29,11 +29,22 @@
             /></div></el-col
         ><el-col :xs="20" :sm="20" :md="9" :lg="9" :xl="10"
           ><div class="bit-words">
-            <h5>主要包含四个模块</h5>
-            <p>Input：Mosaic数据增强、自适应锚框计算、自适应图片缩放</p>
-            <p>Backbone：Focus结构，CSP结构</p>
-            <p>Neck：FPN+PAN结构</p>
-            <p>Output：GIO_Loss </p>
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Input：Mosaic数据增强、自适应锚框计算、自适应图片缩放</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Backbone：Focus结构，CSP结构</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Neck：FPN+PAN结构</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Output：GIO_Loss </p>
+            </div> 
           </div></el-col
         ></el-row
       >
@@ -42,19 +53,33 @@
     <div class="bit">
       <el-row justify="center"
         ><el-col :span="8" class="deeplearning-title"
-          >轻量级网络框架</el-col
+          >轻量级网络框架：ShuffleNet V2</el-col
         ></el-row
       >
       <el-row justify="center" align="middle" :gutter="20"
         ><el-col :xs="20" :sm="20" :md="13" :lg="13" :xl="13"
           ><div class="bit-img">
-            <img :src="require('../../assets/image/technology/42.png')" /></div></el-col
+            <img :src="require('../../assets/image/technology/42.png')" 
+            style="width: 600px;"
+            /></div></el-col
         ><el-col :xs="20" :sm="20" :md="9" :lg="9" :xl="10"
           ><div class="bit-words">
-            <p>Shuffle_Block模块，替换C3和Conv模块</p>
-            <p>原始Focus切片替换1 X 1卷积，降低参数，大大减少网络参数量和计算量</p>
-            <p>删除SSP结构，降低并行计算速度</p>
-            <p>采用DWconw操作的、Neck中PAN两个Contact修改为ADD，降低计算量</p>
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Shuffle_Block模块，替换C3和Conv模块</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>原始Focus切片替换1 X 1卷积，降低参数，大大减少网络参数量和计算量</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>删除SSP结构，降低并行计算速度</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>采用DWconw操作的、Neck中PAN两个Contact修改为ADD，降低计算量</p>
+            </div> 
           </div></el-col
         ></el-row
       >
@@ -63,7 +88,7 @@
     <div class="bit">
       <el-row justify="center"
         ><el-col :span="6" class="deeplearning-title"
-          >基于Agw baseline的Resnet101 Fastreid模型</el-col
+          >重定位网络：FastReid</el-col
         ></el-row
       >
       <el-row justify="center" align="middle" :gutter="20"
@@ -75,10 +100,22 @@
             /></div></el-col
         ><el-col :xs="20" :sm="20" :md="9" :lg="9" :xl="10"
           ><div class="bit-words">
-            <p>ResNet101 大数据大模型，具有强大的学习能力</p>
-            <p>强大的非局部注意块，获得所有位置的特征的加权和</p>
-            <p>细粒度的实例检索</p>
-            <p>加权正则化的三元组损失，避免引入额外margin参数</p>
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>ResNet101 大数据大模型，具有强大的学习能力</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>强大的非局部注意块，获得所有位置的特征的加权和</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>细粒度的实例检索</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>加权正则化的三元组损失，避免引入额外margin参数</p>
+            </div> 
           </div></el-col
         ></el-row
       >
@@ -93,13 +130,25 @@
       <el-row justify="center" align="middle" :gutter="20"
         ><el-col :xs="20" :sm="20" :md="13" :lg="13" :xl="13"
           ><div class="bit-img">
-            <img :src="require('../../assets/image/technology/42.jpg')" /></div></el-col
+            <img :src="require('../../assets/image/technology/46.png')" style="width: 600px;"/></div></el-col
         ><el-col :xs="20" :sm="20" :md="9" :lg="9" :xl="10"
           ><div class="bit-words">
-            <p>margin RELU激活函数保存有益的信息，抑制干扰信息</p>
-            <p>Pre-ReLU特征蒸馏位置（distillation feature position）</p>
-            <p>Partial L2损失函数距离函数（distance function）损失函数来跳过冗余的信息</p>
-            <p>1X1的卷积层来进行升维维度匹配、非对称式的转换方式</p>
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>margin RELU激活函数保存有益的信息，抑制干扰信息</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Pre-ReLU特征蒸馏位置（distillation feature position）</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>Partial L2损失函数距离函数（distance function）损失函数来跳过冗余的信息</p>
+            </div> 
+            <div class="bit-words-p">
+              <i class="iconfont icon-arrow-right"></i>
+              <p>1X1的卷积层来进行升维维度匹配、非对称式的转换方式</p>
+            </div> 
           </div></el-col
         ></el-row
       >
@@ -434,6 +483,19 @@ export default {
   font-size: 20px;
   font-family: Open Sans, Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue,
     sans-serif;
+}
+
+.bit-words-p {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.bit-words-p i {
+  margin: 0;
+}
+
+.bit-words-p p {
+  margin: 0;
 }
 .deeplearning-title {
   text-align: center;

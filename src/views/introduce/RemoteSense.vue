@@ -116,7 +116,7 @@
               <div class="animate-card__sublayer">
                 <h3>刑侦破案</h3>
                 <div>
-                  利用智慧天眼技术快速从海量视频监控中锁定嫌疑人，减少时间成本的损耗，并串联起其行动轨迹，对刑事案件的侦破有很大的帮助
+                  在案情突发时，利用“智慧天眼”能一键部署至相应区域，快速从海量的视频监控锁定查找到嫌疑犯，减少时间成本的损耗，并串联起其行动轨迹，分析作案动机，提供有利证据，以提高刑事案件的侦破速度、效率
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
               <div class="animate-card__sublayer">
                 <h3>智能寻人</h3>
                 <span
-                  >利用遥感图像处理技术可大量瞬间静态图像信息，这些图像信息既可用于监测动态变化，也可用于规模性的重复用观测活动。</span
+                  >“智慧天眼”部署在大型商场中，进行商场安保与顾客分析，通过顾客外观照片，实时跟踪动态，获取其行为轨迹，了解对象在商场中的兴趣方向，优化用户商业体验，提供个性化服务与商品推送</span
                 >
               </div>
             </div>
@@ -139,14 +139,13 @@
           <el-col :xs="22" :sm="20" :md="8" :lg="8" :xl="8">
             <div class="animate-card animate-card-32">
               <div class="animate-card__layer">
-                <img :src="require('../../assets/image/remotesense/22.jpg')" />
+                <img :src="require('../../assets/image/remotesense/22.png')" />
                 <div class="words">大型商场</div>
               </div>
 
               <div class="animate-card__sublayer">
                 <h3>大型商场</h3>
-                <span
-                  >利用遥感图像处理技术可大量瞬间静态图像信息，这些图像信息既可用于监测动态变化，也可用于规模性的重复用观测活动。</span
+                <span>“智慧天眼”部署在大型商场中，进行商场安保与顾客分析，通过顾客外观照片，实时跟踪动态，获取其行为轨迹，了解对象在商场中的兴趣方向，优化用户商业体验，提供个性化服务与商品推送</span
                 >
               </div>
             </div>
@@ -163,7 +162,7 @@
               <div class="animate-card__sublayer">
                 <h3>无人超市</h3>
                 <div>
-                  基于地物光谱的特性，并通过遥感图像判读，可将具体地貌、波谱特征、地表情况及位置分布等充分反映出来，从而为地质测绘提供可靠的信息基础。
+                  “智慧天眼”部署在大型商场中，进行商场安保与顾客分析，通过顾客外观照片，实时跟踪动态，获取其行为轨迹，了解对象在商场中的兴趣方向，优化用户商业体验，提供个性化服务与商品推送
                 </div>
               </div>
             </div>
@@ -177,8 +176,7 @@
 
               <div class="animate-card__sublayer">
                 <h3>野生动物保护</h3>
-                <span
-                  >利用遥感图像处理技术可大量瞬间静态图像信息，这些图像信息既可用于监测动态变化，也可用于规模性的重复用观测活动。</span
+                <span>“智慧天眼”注重自然生态保护，拓展至野外摄像头进行动物跨境跟踪，实时跟踪分析轨迹，了解动物习性、野外生存状况以便时刻做出调整，保护人与自然和谐发展，共建美好家园</span
                 >
               </div>
             </div>
@@ -601,7 +599,7 @@ export default {
 .animate-card-32 .animate-card__layer {
   width: 50%;
   height: 100%;
-  transition: 0.5s;
+  transition: .8s;
   transform: rotate(360deg) scale(1, 1);
   position: relative;
 }
@@ -609,8 +607,8 @@ export default {
   border: 10px solid;
   border-image: linear-gradient(135deg,#232526,#414345) 1;
   clip-path: inset(0 round 10px);
-  width: 120%;
-  height: 120%;
+  width: 110%;
+  height: 110%;
 }
 .animate-card-32 .animate-card__sublayer {
   position: absolute;
