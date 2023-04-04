@@ -10,7 +10,6 @@
           /></div>
     <div
       class="divider title-bg"
-      :style="{ backgroundImage: 'url(' + Img6 + ')' }"
       style="font-family: Microsoft JhengHei UI, sans-serif; color: white"
     >
       深度学习部分
@@ -108,9 +107,8 @@
 
     <div
       class="divider"
-      :style="{ backgroundImage: 'url(' + Img8 + ')' }"
       style="
-        color: rgb(65, 184, 131);
+        color: white;
         font-family: Microsoft JhengHei UI, sans-serif;
       "
     >
@@ -287,9 +285,8 @@
         
     <div
       class="divider"
-      :style="{ backgroundImage: 'url(' + Img9 + ')' }"
       style="
-        color: rgb(64, 158, 255);
+        color: white;
         font-family: Microsoft JhengHei UI, sans-serif;
       "
     >
@@ -499,20 +496,17 @@ export default {
   border-radius: 5px;
   text-align: center;
   letter-spacing: 30px;
-  line-height: 200px;
+  line-height: 120px;
   margin-bottom: 20px;
-  width: 96%;
-  height: 200px;
+  width: 100%;
+  height: 120px;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 37px;
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
     Microsoft YaHei, 微软雅黑, Arial, sans-serif;
-  border: 1px solid rgba(0, 0, 255, 0.2);
   transition: all 0.2s;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-}
-.divider:hover {
-  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, 0.2);
+  box-shadow: 0px 5px 2px -1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(135deg,#232526,#414345);
 }
 .axios {
   text-align: center;
