@@ -215,28 +215,29 @@ export default {
   },
   methods: {
     gologin() {
-      login(this.user)
-        .then(({ data }) => {
+      // login(this.user)
+      //   .then(({ data }) => {
       
-          if (data.code == 1) {
-            this.$message.error(data.msg);
-          } else {
+      //     if (data.code == 1) {
+      //       this.$message.error(data.msg);
+      //     } else {
         
-            const { accessToken } = data.data;
-            const { superAdmin } = data.data;
-            localStorage.setItem("token", accessToken);
-            localStorage.setItem("superAdmin", superAdmin);
-            if (superAdmin == "admin") {
-              this.$router.push("userlist");
-            } else {
-              this.$router.push("detectchanges");
-              this.$message.success("登录成功！");
-            }
-          }
-        })
-        .catch((err) => {
-          this.$message.error(err.response.data.message);
-        });
+      //       const { accessToken } = data.data;
+      //       const { superAdmin } = data.data;
+      //       localStorage.setItem("token", accessToken);
+      //       localStorage.setItem("superAdmin", superAdmin);
+      //       if (superAdmin == "admin") {
+      //         this.$router.push("userlist");
+      //       } else {
+      //         this.$router.push("detectchanges");
+      //         this.$message.success("登录成功！");
+      //       }
+      //     }
+      //   })
+      //   .catch((err) => {
+      //     this.$message.error(err.response.data.message);
+      //   });
+      window.location.href = "http://localhost:9001/";
     },
     createUser() {
       if (!this.passWordRules.test(this.user.password)) {

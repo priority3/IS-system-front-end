@@ -170,8 +170,8 @@ export default {
         {
           title: "车辆跨域跟踪",
           words: [
-            "Reid模型加入跨域跟踪基线SBS Baseline，利用VeRI-Wild车辆跨域数据集训练；同时采用Yolov5s车牌识别模块，对车辆进行跨域跟踪",
-            "Reid-Overhaul distillatio && YOLOv5s-Shufflenetv2",
+            "Reid模型加入跨域跟踪基线SBS Baseline，利用VeRI-Wild车辆跨域数据集训练；同时采用Yolov5s+Plate-RC车牌识别模块，对车辆进行跨域跟踪",
+            "Reid-Overhaul distillatio && YOLOv5s-Shufflenetv2 && Plate-RC",
           ],
           imgsrc: funImg3,
           subtitle: ["使用模型"],
