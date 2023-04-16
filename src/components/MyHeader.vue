@@ -35,7 +35,6 @@ import {
   goLogin,
   goDetectChanges
 } from "@/utils/gosomewhere";
-import { loginOut } from "@/api/login.js";
 export default {
   name: "myheader",
   methods: {
@@ -43,7 +42,6 @@ export default {
     goIntelligent,
     goTechnology,
     goLogin,
-    loginOut,
     goDetectChanges,
     logOut() {
       document.body.style.overflow = "hidden";
@@ -54,12 +52,11 @@ export default {
       })
         .then(() => {
           document.body.style.overflow = "auto";
-          this.loginOut().then((res) => {
-            localStorage.setItem('name','abc')
-            localStorage.setItem("token", "");
-            this.$message.success("登出成功！");
-            this.$router.push("login");
-          });
+          
+          localStorage.setItem('name','abc')
+          localStorage.setItem("token", "");
+          this.$message.success("登出成功！");
+          this.$router.push("login");
         })
         .catch(() => {
           document.body.style.overflow = "auto";

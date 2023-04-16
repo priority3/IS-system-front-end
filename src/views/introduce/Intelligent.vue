@@ -124,7 +124,6 @@
 
 <script>
 import { showFullScreenLoading, hideFullScreenLoading } from "@/utils/loading";
-import { getNews } from "@/api/news";
 import MyHeader from "@/components/MyHeader";
 import Tabinfor from "@/components/Tabinfor";
 import BigCard from "@/components/BigCard";
@@ -206,29 +205,7 @@ export default {
       media: [],
     };
   },
-  created() {
-  //   showFullScreenLoading("#load");
-  //   this.getNews(1, 4, 1).then((res) => {
-  
-  //     this.news.push(...res.data.data);
-
-  //     this.ishovernews = 0;
-  //     this.newsGet = true;
-  //     hideFullScreenLoading("#load");
-  //   });
-  //   this.getNews(1, 4, 3).then((res) => {
-  //     this.industry = res.data.data;
-   
-  //     this.industryGet = true;
-  //   });
-  //   this.getNews(1, 4, 2).then((res) => {
-  //     this.media = res.data.data;
-     
-  //     this.mediaGet = true;
-  //   });
-  },
   methods: {
-    getNews,
     getMoreNews(type) {
       if (type == 1) {
         showFullScreenLoading(".bignews");
@@ -237,32 +214,19 @@ export default {
           this.page.newsPage = 2;
         }
       
-        this.getNews(this.page.newsPage, 4, 1).then((res) => {
-          // this.news.splice(0,this.news.length)
-       
-          this.news = res.data.data;
-          hideFullScreenLoading(".bignews");
-        });
       } else if (type == 2) {
         showFullScreenLoading(".media");
         this.page.mediaPage++;
         if (this.page.mediaPage == 6) {
           this.page.mediaPage = 2;
         }
-        this.getNews(this.page.mediaPage, 4, 2).then((res) => {
-          this.media = res.data.data;
-          hideFullScreenLoading(".media");
-        });
+        
       } else if (type == 3) {
         showFullScreenLoading(".industry");
         this.page.industryPage++;
         if (this.page.industryPage == 6) {
           this.page.industryPage = 2;
         }
-        this.getNews(this.page.industryPage, 4, 3).then((res) => {
-          this.industry = res.data.data;
-          hideFullScreenLoading(".industry");
-        });
       }
     },
     goPreviewNews(index) {

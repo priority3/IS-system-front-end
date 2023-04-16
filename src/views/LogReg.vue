@@ -136,7 +136,6 @@
   </div>
 </template>
 <script>
-import { create, login, reset } from "@/api/login";
 import MyHeader from "@/components/MyHeader";
 import bg from "@/assets/image/other/bg1.jpg";
 export default {
@@ -245,16 +244,8 @@ export default {
       } else if (!this.emailRules.test(this.user.email)) {
         this.$message.error("邮箱格式错误了哦");
       } else {
-        create(this.user).then((res) => {
-          if (res.data.code == 1) {
-            this.$message.error(res.data.msg);
-            this.user = { username: "", password: "", email: "" };
-          } else {
-            this.goSignIn();
-            this.$message.success("创建成功");
-            this.user = { username: "", password: "", email: "" };
-          }
-        });
+          this.$message.success("创建成功");
+          this.user = { username: "", password: "", email: "" };
       }
     },
     goReset() {
@@ -263,16 +254,8 @@ export default {
       } else if (!this.emailRules.test(this.forget.myemail)) {
         this.$message.error("邮箱格式错误了哦");
       } else {
-        reset(this.forget).then((res) => {
-        
-          if (res.data.code == 1) {
-            this.$message.error(res.data.msg);
-            this.forget = { username: "", newPassword: "", myemail: "" };
-          } else {
-            this.$message.success("重置成功");
-            this.forget = { username: "", newPassword: "", myemail: "" };
-          }
-        });
+          this.$message.success("重置成功");
+          this.forget = { username: "", newPassword: "", myemail: "" };
       }
     },
     goSignUp() {
