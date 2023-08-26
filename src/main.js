@@ -9,7 +9,5 @@ import './assets/css/normalize.css'
 import '@/assets/css/app.css'
 import 'element-plus/theme-chalk/display.css'
 import VueParticles from 'vue-particles'
-import JSZIP from "jszip"
 
-
-createApp(App).use(router).use(ElementPlus).use(VueParticles).use(JSZIP).mount('#app')
+createApp(App).use(router).use(ElementPlus).use(VueParticles).mount('#app')
