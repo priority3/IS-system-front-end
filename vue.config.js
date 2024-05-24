@@ -5,5 +5,8 @@ module.exports = defineConfig({
     port: 5008, // 端口
   },
   // transpileDependencies: ['@arcgis']
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/IS-system-front-end/' // 替换 <repository-name> 为你的仓库名称
+    : '/'
 })
 
