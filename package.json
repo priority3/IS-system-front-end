@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vueuse/core": "^8.5.0",
@@ -13,6 +15,7 @@
     "echarts": "^5.3.2",
     "element-plus": "^2.1.9",
     "file-saver": "^2.0.5",
+    "gh-pages": "^6.1.1",
     "jszip": "^3.9.1",
     "scrollreveal": "^4.0.9",
     "vue": "^3.2.13",
